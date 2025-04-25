@@ -13,4 +13,6 @@ from .student import Student
 # from .course import Course
 # from .enrollment import Enrollment
 
-
+# backend/app/db/models/__init__.py
+# ... other imports ...
+from .user import User # Add this line
