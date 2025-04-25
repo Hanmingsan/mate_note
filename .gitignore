@@ -1,0 +1,115 @@
+# .gitignore for FastAPI + Vue.js Project
+
+# --- Python ---
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+# Python Cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+# IPython Notebook checkpoints
+.ipynb_checkpoints/
+# Mypy cache
+.mypy_cache/
+# Pytest cache
+.pytest_cache/
+
+# --- Node.js ---
+# Dependency directories
+node_modules/
+# Debug logs
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+# Lock files (optional, some prefer to commit them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# --- Frontend Build Output ---
+frontend/dist/
+frontend/out/
+frontend/.nuxt/ # If using Nuxt.js
+
+# --- IDE / Editor ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+# Vim
+*.swp
+*.swo
+*~
+# Netbeans project directory
+nbproject/
+# Eclipse
+.project
+.settings/
+.classpath
+
+# --- Operating System ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# --- Environment Variables ---
+# Ignore all .env files by default
+*.env
+# But DO NOT ignore .env.example files
+!*.env.example
+
+# --- Databases ---
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal*
+*.db-wal*
+*.db-shm*
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Test & Coverage Reports ---
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+pytestdebug.log
+
+# --- Secrets & Credentials ---
+# Add any specific secret files here if not covered by .env
+# e.g., secrets.json, credentials.yml
+
+# --- Other ---
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# --- Alembic (if used) ---
+# alembic.ini (if it contains sensitive info, otherwise keep it)
+# alembic/versions/*.pyc (already covered by *.pyc)
+
+
