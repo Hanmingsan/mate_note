@@ -61,6 +61,3 @@ def disconnect_db(conn, db_params):
         print(f"关闭数据库连接时出错: {e}", file=sys.stderr)
     except Exception as e:
         print(f"断开连接时发生意外错误: {e}", file=sys.stderr)
-db_connection, db_parameter = connect_db()
-
-disconnect_db(db_connection, db_parameter)
