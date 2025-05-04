@@ -51,5 +51,3 @@ def query_mate_by_name (mate_name):
 
     # 7. 返回获取到的数据 (可能为 [] 或 None)
     return data
-
-print(query_mate_by_name('谢涵名'))

@@ -47,4 +47,3 @@ def create_mate(name,
     finally:
         if conn:
             cdb.disconnect_db(conn, db_params)
-
