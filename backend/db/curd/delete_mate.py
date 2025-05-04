@@ -42,4 +42,4 @@ def delete_mate_by_name (name:str):
         else:
              print("连接未建立，无需断开。") # 可选的提示
 
-   return success
+    return success
