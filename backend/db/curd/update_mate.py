@@ -1,4 +1,4 @@
-import connect_to_db as cdb
+import db.curd.connect_to_db as cdb
 import psycopg2
 import sys
 
