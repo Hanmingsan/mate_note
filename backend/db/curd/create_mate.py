@@ -1,7 +1,7 @@
 import os
 import psycopg2
 import sys
-import connect_to_db as cdb
+import db.curd.connect_to_db as cdb
 
 def create_mate(name,
                 comment,
