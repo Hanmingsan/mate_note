@@ -1,4 +1,4 @@
-import connect_to_db as cdb # 使用你定义的模块
+import db.curd.connect_to_db as cdb # 使用你定义的模块
 import psycopg2           # 导入 psycopg2 以便捕获其错误
 import sys                # 用于打印错误到 stderr
 
