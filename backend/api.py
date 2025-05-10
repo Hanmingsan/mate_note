@@ -38,4 +38,17 @@ def add_mate(name: str,
 @app.post("/delete_mate")
 def delete_mate(name: str):
     status = db.dm.delete_mate_by_name(name)
-    return {"status": f"{str{status}}"}
+    return {"status": f"{str(status)}"}
+
+@app.get("/update_mate")
+def update_mate(name: str,
+                 comment: str = None,
+                 tel: str = None,
+                 wechat_id: str = None,
+                 qq_id: str = None,
+                 personal_motto: str = None,
+                 photo_url: str = None
+                ):
+    status = db.um.update_mate(name, comment, tel, wechat_id, qq_id, personal_motto, photo_url)
+    return {"status": f"{str(status)}"}
+
