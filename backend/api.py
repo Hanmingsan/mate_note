@@ -34,3 +34,8 @@ def add_mate(name: str,
             ):
     status = db.cm.create_mate(name, comment, tel, wechat_id, qq_id, personal_motto, photo_url)
     return {"status": f"{str(status)}"}
+
+@app.post("/delete_mate")
+def delete_mate(name: str):
+    status = db.dm.delete_mate_by_name(name)
+    return {"status": f"{str{status}}"}
