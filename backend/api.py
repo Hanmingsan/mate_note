@@ -52,3 +52,13 @@ def update_mate(name: str,
     status = db.um.update_mate(name, comment, tel, wechat_id, qq_id, personal_motto, photo_url)
     return {"status": f"{str(status)}"}
 
+@app.get("/existance")
+def check_existance(name: str):
+    data = None
+    try:
+        data = db.ce.check(name)
+        return {"existance": data}
+    except IndexError:
+        return {"message": "mate not found in database"}
+    except Exception as e:
+        return {"message": f"error {e} happened"}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同学录</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6fa; /* Light purple background */
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: #2c20d87f; /* Medium purple */
+            color: white;
+            padding: 10px 0;
+            transition: background-color 0.5s ease;
+        }
+        main {
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px; /* Increased margin for larger spacing */
+            padding: 10px 20px;
+            background-color: #6a5acd;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #836fff;
+            transform: scale(1.1);
+        }
+        p {
+            font-size: 18px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到谢涵名的同学录</h1>
+    </header>
+    <main>
+        <p>填写、修改和查看👀你的资料</p>
+        <p> </p>
+        <a href="log.html" class="button">填写同学录</a>
+        <p> </p>
+        <a href="view.html" class="button">查看同学录</a>
+        <p> </p>
+        <a href="modify.html" class="button">修改同学录</a>
+    </main>
+</body>
+</html>
